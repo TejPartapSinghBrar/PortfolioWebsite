@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <style>
+      .foot{
+            background-color: #946E4A;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+      .find{
+        background-color:#946E4A;
+        color: white;
+        padding-left: 200;
+        text-align: center;
+      }
+      .container {
+        max-width: 1800px;
+        margin: 20px auto;
+        padding: 0 20px;
+        }
+      .about{
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        font-size: large;
+        font-family: cursive;
+      }
+      .bodd{
+        background-color: #eae4dd;
+      }
+      .toptext{
+        font-size: 32;
+      }
+      * {box-sizing:border-box}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+    </style>
+
+</head>
+<header>
+  <nav class="navbar" style="background-color: #946E4A;" data-bs-theme="dark">
+        <div class="container-fluid">
+          <img src="logonobg.png" alt="logo" width="150">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Achievements.html">Achievements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact_me.html">Contact Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Tej Partap Singh Brar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+<body class="bodd">
+  <br>
+  <div class="container">
+    <div class="slideshow-container">
+      
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img1.jpg" style="width:100%">
+        <div class="text">Photography</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img2.jpg" style="width:100%">
+        <div class="text">Tech</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img3.jpg" style="width:100%">
+        <div class="text">Fitness</div>
+      </div>
+    
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+   
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <section id="about" class="about">
+        <h2><u>About Me</u></h2><br>
+        <p class="toptext">
+          Hello! I’m Tej Partap Singh Brar, an 18-year-old Computer Science Engineering student at Chitkara University, hailing from the vibrant city of Chandigarh. My passion for technology started at a young age and has grown into a deep fascination with the limitless possibilities that computers and software bring to the world. This passion has driven me to not only excel academically but also to actively engage in various tech-related projects outside the classroom.
+          <br><br>
+          As an avid computer enthusiast, I’ve had the opportunity to explore a wide range of technologies, from coding and software development to hardware tinkering. This hands-on experience has allowed me to hone my skills, leading to numerous national awards in technology competitions. My journey in tech is complemented by my freelance work, where I’ve been able to apply my skills to real-world projects, helping clients solve problems and bring their ideas to life.
+          <br><br>
+          But there’s more to me than just technology. I’m also deeply committed to sports and fitness, believing that a healthy body is essential for a sharp mind. Whether it's hitting the gym, playing a sport, or just staying active, fitness is a crucial part of my daily routine. It helps me maintain balance and keeps me energized for the challenges of both academic and professional life.
+          <br><br>
+          In addition to my love for technology and fitness, I have a keen interest in photography. This creative outlet has allowed me to capture the world from unique perspectives, and I’ve been fortunate enough to win national awards in this field as well. Photography, much like coding, requires attention to detail and a creative eye, both of which I strive to bring into every aspect of my life.
+          <br><br>
+          I’m always on the lookout for new challenges and opportunities to grow. Whether it’s developing a new software project, improving my fitness levels, or capturing the perfect shot, I’m driven by a desire to learn and excel. My journey so far has been exciting, and I’m eager to see where my passions will take me next.</i></p>
+        </section>
+
+       
+
+  </div>
+</body>
+<script>
+  let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); 
+}
+</script>
+<section class="find">
+  <h2> Qualifications </h2>
+</section>
+<section id="about" class="about">
+<table align="center" border="1" cellpadding="10" cellspacing="0">
+  <caption><strong>Educational Qualifications</strong></caption>
+  <tr>
+    <th>Name of Institute</th>
+    <th>Subject</th>
+    <th>Percentage</th>
+    <th>Year of Passing</th>
+  </tr>
+  <tr align="center">
+    <td>Chitkara University</td>
+    <td>CSE</td>
+    <td>95%</td>
+    <td>2027</td>
+  </tr>
+  <tr align="center">
+    <td>Doon International School</td>
+    <td>Non Medical</td>
+    <td>89%</td>
+    <td>2023</td>
+  </tr>
+</table>
+</section>
+
+<footer class="foot">
+  &copy; 2024 Copyright.
+</footer>
+
+</html>
